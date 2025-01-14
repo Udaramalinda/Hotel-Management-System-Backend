@@ -2,6 +2,8 @@
 
 This repository contains the backend for the Hotel Reservation and Management System, developed using **Spring Boot** and **PostgreSQL**. The system is designed to streamline hotel reservations, manage hotel registrations with room details, and provide customers with the best reservation options based on their budget and group size. 
 
+[Frontend Repository for Hotel Reservation & Management System](https://github.com/Udaramalinda/Hotel-Management-System-Frontend)
+
 ## Features
 
 ### Core Features
