@@ -1,26 +1,28 @@
-# Hotel Management System - Backend
+# Hotel Reservation and Management System Backend
 
-This is the backend service of the Hotel Management System, built using Spring Boot and PostgreSQL. The system provides a platform for hotel owners to register their hotels and manage their details, while users can search for hotels that best suit their requirements. The backend includes robust user authentication and role-based access using JWT.
+This repository contains the backend for the Hotel Reservation and Management System, developed using **Spring Boot** and **PostgreSQL**. The system is designed to streamline hotel reservations, manage hotel registrations with room details, and provide customers with the best reservation options based on their budget and group size. 
 
 ## Features
 
-- **Hotel Registration**: Hotel owners can register their hotels with details such as room count, room types, and prices.
-- **User Registration and Login**: Users can create accounts, log in, and search for hotels based on their preferences.
-- **Role-Based Dashboards**: Separate dashboards for:
-  - Hotel Owners: Manage their hotels' details.
-  - Users: Search and browse available hotels.
-- **Search Functionality**: Users can find hotels that meet their specified criteria.
-- **Secure Authentication**: Uses JWT for secure login and role-based access control.
+### Core Features
+- **Hotel Registration**: Allows hotels to register along with room details.
+- **Reservation Management**: Customers can book rooms based on availability and preferences.
+- **Recommendation Algorithm**: Suggests the best reservation options considering customer budget and group size.
+- **Customer Management**: Handles customer details and reservation history.
 
-## Technology Stack
+### Security Features
+- **JWT Authentication**: Secures API endpoints using JSON Web Tokens (JWT).
+- **Role-Based Access Control (RBAC)**: Restricts access to specific resources and actions based on user roles:
+  - **Admin**: Manages hotels, rooms, and user accounts.
+  - **Hotel Manager**: Manages hotel-specific details and reservations.
+  - **Customer**: Searches for hotels, makes reservations, and manages personal bookings.
+
+---
+
+## Tech Stack
 
 - **Backend Framework**: Spring Boot
 - **Database**: PostgreSQL
-- **Authentication**: JSON Web Token (JWT)
-
-## Getting Started
-
-### Installation
-
-1. Clone the repository
-2. Configure the database
+- **Security**: JWT Authentication, Role-Based Access Control
+- **Build Tool**: Maven
+- **Programming Language**: Java
